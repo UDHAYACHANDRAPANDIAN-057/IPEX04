@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Program3</title>
+    </head>
+    <body>
+        <script>
+            const circle={
+                radius:prompt("Enter the radius of the circle"),
+
+                calarea:function(){
+                    return Math.PI*Math.pow(this.radius,2);
+                },
+                    
+                calperimeter:function(){
+                    return 2*Math.PI*this.radius;
+                }
+
+            }
+            document.write("<h1>Circle</h1>");
+            document.write("<p>Enter radius :"+circle.radius+"</p>");
+            document.write("<p>Area of circle :"+circle.calarea().toFixed(2)+"</p>");
+            document.write("<p>Perimeter of circle :"+circle.calperimeter().toFixed(2)+"</p>")
+        </script>
+    </body>
+</html> 

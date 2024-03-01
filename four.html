@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Program4</title>
+    </head>
+    <body>
+    
+    <script>
+        var userName = prompt("Please enter your name:");
+    
+        alert("Welcome, " + userName + "!");
+    
+        var currentDate = new Date();
+        var options = { month: 'long', day: 'numeric', year: 'numeric' };
+        var formattedDate = currentDate.toLocaleDateString('en-US', options);
+    
+        var dateParagraph = document.createElement('p');
+        dateParagraph.textContent = "Current Date: " + formattedDate;
+        document.body.appendChild(dateParagraph);
+    
+        var lastModifiedDate = new Date(document.lastModified);
+        var formattedLastModifiedDate = lastModifiedDate.toLocaleDateString('en-US', options);
+    
+        var lastModifiedParagraph = document.createElement('p');
+        lastModifiedParagraph.textContent = "Last Modified: " + formattedLastModifiedDate;
+        document.body.appendChild(lastModifiedParagraph);
+    </script>
+    
+    </body>
+</html>

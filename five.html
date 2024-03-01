@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program5</title>
+    <style>
+        p {
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var paragraph = document.querySelector('p');
+        
+        paragraph.addEventListener('mouseover', function() {
+            paragraph.style.backgroundColor = 'yellow';
+        });
+        
+        paragraph.addEventListener('mouseout', function() {
+            paragraph.style.backgroundColor = '';
+        });
+    });
+</script>
+
+<p>This is a paragraph. Move your mouse over it to change the background color.</p>
+
+</body>
+</html>

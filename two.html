@@ -1,0 +1,29 @@
+
+<html>
+<head>
+    <title>p2</title>
+</head>
+<body>
+    <script>
+        var a=prompt("Enter the list of elements")
+        const b= a.split('')
+        for(i=0;i<b.length;i++){
+            swap=0
+            for(j=0;j<b.length-1-i;j++){
+                if(b[j]<b[j+1]){
+                    temp = b[j]
+                    b[j] = b[j+1]
+                    b[j+1] = temp
+                    swap=1
+                }
+               
+            }
+            if (swap==0){
+                    break
+                }
+        }
+        document.write("<h1>The Second largest Element is "+b[1]+" the second smallest element is "+b[b.length-2]+"</h1>")
+    </script>
+</body>
+</html>
+
